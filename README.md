@@ -3,6 +3,8 @@ seems that the testcase setup fails before it ever reaches my code,
 because the south_migrationhistory table only exists in one database, but 
 South expects to find it in all databases. 
 
+The bug is under discussion on the [South mailing list](https://groups.google.com/forum/?fromgroups=#!topic/south-users/Sre6bO9aJzo).
+
 You can repro this problem using this demo app, like this:
 
 	git clone git@github.com:qris/south-migration-multiple-databases-problem.git
